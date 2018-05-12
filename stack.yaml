@@ -1,0 +1,8 @@
+resolver: nightly-2018-05-10
+
+packages:
+- .
+
+extra-deps:
+- Fin-0.2.3.0
+- natural-induction-0.2.0.0
