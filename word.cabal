@@ -7,7 +7,7 @@ license-file:        LICENSE
 author:              M Farkas-Dyck
 maintainer:          strake888@gmail.com
 copyright:           2018 M Farkas-Dyck
--- category:            
+category:            Data, Math, Numeric
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
