@@ -48,7 +48,7 @@ toNatural = foldl (\ n b -> bool id (+1) b $ n `shiftL` 1) 0 . bits
 
 instance Natural n => Bits (Word n) where
     Word as .&. Word bs = Word (liftA2 (&&) as bs)
-    Word as .|. Word bs = Word (liftA2 (&&) as bs)
+    Word as .|. Word bs = Word (liftA2 (||) as bs)
     Word as `xor` Word bs = Word (liftA2 (/=) as bs)
     complement (Word as) = Word (not <$> as)
     shiftL (Word as) k = Word $ stimes k (Endo go) `appEndo` as
